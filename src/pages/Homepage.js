@@ -18,9 +18,6 @@ export default class Homepage extends Component {
             <p>
                 Why purchase your own llamas when you can rent mine for a <em>fraction</em> of the cost?
             </p>
-            <div>
-                <Link to="/checkout" className="cta">Rent now!</Link>
-            </div>
         </div>
     }
 
