@@ -1,0 +1,57 @@
+.App {
+}
+
+header.header {
+    background-color: #27ae60;
+    color: white;
+    font-size: large;
+    padding: 20px;
+    display: flex;
+}
+
+header.header .headerLink {
+    text-decoration: none;
+    color: white;
+    flex: 1 1 0;
+}
+
+header.header nav .link {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+section.content {
+    padding: 20px;
+
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 1em;
+    font-size: large;
+    outline: none;
+    border: none;
+    background-color: #2ecc71;
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.fieldset {
+    margin: 0.5em 0;
+}
+
+.fieldset input[type=text] {
+    font-size: 16px;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 2px;
+    border: 1px solid #aaa;
+}
+
+h2 {
+    margin-top: 3em;
+}
