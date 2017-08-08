@@ -10,3 +10,8 @@ This is a simple example app of demonstrating one way of using higher-order comp
 | `auth`     | Contains the app with authorization, without the use of higher-order components |
 | `auth-hoc` | Contains the app with authorization, with the use of higher-order components |
 
+
+
+## Installation
+
+Clone this repository and use `npm install` to install the required dependencies. `npm start` will load the app in your browser.
