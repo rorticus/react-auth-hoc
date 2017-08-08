@@ -5,6 +5,10 @@ import Homepage from "./pages/Homepage";
 import {Link, Route} from 'react-router-dom'
 import Account from "./pages/Account";
 import Schedule from "./pages/Schedule";
+import Authorized from "./components/Authorized";
+
+const authorizedAccount = Authorized(Account);
+const authorizedSchedule = Authorized(Schedule);
 
 class App extends Component {
     render() {
@@ -20,8 +24,8 @@ class App extends Component {
                 </header>
                 <section className="content">
                     <Route path="/" exact component={Homepage}/>
-                    <Route path="/schedule" component={Schedule}/>
-                    <Route path="/account" component={Account}/>
+                    <Route path="/schedule" component={authorizedSchedule}/>
+                    <Route path="/account" component={authorizedAccount}/>
                 </section>
             </div>
         );
