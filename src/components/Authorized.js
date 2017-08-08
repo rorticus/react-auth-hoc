@@ -6,7 +6,7 @@ export default function Authorized(WrappedComponent) {
     return class extends Component {
         render() {
             if (auth.isAuthenticated()) {
-                return <WrappedComponent />;
+                return <WrappedComponent {...this.props} />;
             } else {
                 return <LogIn/>;
             }
