@@ -1,12 +1,17 @@
 import React, {Component} from 'react';
+import LogIn from '../components/LogIn';
+import auth from '../utils/auth';
 
 export default class Schedule extends Component {
     render() {
-        return (
-            <div>
-                <h1>Ready for your upcoming llamas?</h1>
-                <h2>View your schedule</h2>
-            </div>
-        );
+        if (auth.isAuthenticated()) {
+            return (
+                <div>
+                    <h2>View Your Schedule</h2>
+                </div>
+            );
+        } else {
+            return <LogIn/>;
+        }
     }
 }

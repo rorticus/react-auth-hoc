@@ -11,7 +11,7 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="header">
-                    <Link className="headerLink" to="/">1-800-llamas.com</Link>
+                    <Link className="headerLink" to="/">Example App</Link>
                     <nav>
                         <Link className="link" to="/account">My Account</Link>
                         &nbsp;|&nbsp;
